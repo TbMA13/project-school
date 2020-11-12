@@ -1,0 +1,159 @@
+@media screen and (min-width: 1125px) {
+    #flex-div-article {
+        position: relative;
+        width: 90%;
+        height: auto;
+        padding-top: 40px;
+        margin-left: 30px;
+        padding-bottom: 30px;
+
+        display: flex;
+        flex-direction: column;
+    }
+    div.useful-links-div {
+        position: relative;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    div.useful-link-div {
+        position: relative;
+        width: 30%;
+        height: auto;
+
+        margin-bottom: 15px;
+
+        display: flex;
+        flex-direction: column;
+    }
+    div.useful-link-div > a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        text-decoration: none;
+        color: black;
+    }
+    div.useful-link-div > a:hover {
+        color: #8A5F29;
+    }
+    #holidays {
+        font-size: inherit;
+        display: flex;
+        flex-direction: row;
+
+    }
+    div.special-index > p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        margin-left: 15px;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (min-width: 551px) and (max-width: 1124px){
+    #flex-div-article {
+        position: relative;
+        width: 90%;
+        height: auto;
+        padding-top: 40px;
+        margin-left: 30px;
+        padding-bottom: 30px;
+
+        display: flex;
+        flex-direction: column;
+    }
+    div.useful-links-div {
+        position: relative;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    div.useful-link-div {
+        position: relative;
+        width: 30%;
+        height: auto;
+
+        margin-bottom: 15px;
+
+        display: flex;
+        flex-direction: column;
+    }
+    div.useful-link-div > a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        text-decoration: none;
+        color: black;
+    }
+    div.useful-link-div > a:hover {
+        color: #8A5F29;
+    }
+    #holidays {
+        font-size: inherit;
+        display: flex;
+        flex-direction: row;
+    }
+    div.special-index > p {
+        margin-left: 5px !important;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        margin-left: 15px;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #flex-div-article {
+        position: relative;
+        width: 90%;
+        height: auto;
+        padding-top: 10px;
+
+        display: flex;
+        flex-direction: column;
+    }
+    div.useful-links-div {
+        position: relative;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    div.useful-link-div {
+        position: relative;
+        width: 100%;
+        height: auto;
+
+        margin-bottom: 15px;
+
+        display: flex;
+        flex-direction: column;
+    }
+    div.useful-link-div > a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        text-decoration: underline;
+        color: black;
+    }
+    div.useful-link-div > a:hover {
+        color: #8A5F29;
+    }
+    #holidays {
+        font-size: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    div.special-index > p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        margin-left: 15px;
+        margin-top: 8px;
+    }
+}
