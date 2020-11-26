@@ -1,3 +1,6 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
 @media screen and (min-width: 1125px) {
     
     /*!ВСЕ*/
@@ -10,6 +13,7 @@
         min-height: 100%;
         min-width: 100%;
         background-image: url(photos/background/background-desktop.jpg);
+        background-position: center;
         background-size: cover;
         z-index: -100;
     }
@@ -53,7 +57,6 @@
     }
     a.top-panel {
         text-decoration: none;
-        font-family: Arial;
         font-size: 33px;
         letter-spacing: 0.055em;
         color: #ffffff;
@@ -70,23 +73,10 @@
 /*!БЛОК ARTICLE*/
 
     main {
-        position: absolute;
-        margin-top: 60px;
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    div.head-text {
-        position: relative;
-        width: 90%;
-        margin-top: 40px;
-        height: auto;
-
-        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
-        background: rgba(255, 255, 255, 0.7);
-        border-radius: 20px;
-        backdrop-filter: blur(10px);
     }
 
     div.article {
@@ -132,7 +122,6 @@
         font-weight: bolder;
     }
     div.list > p {
-        font-family: Arial, Helvetica, sans-serif;
         font-size: 22px;
         margin-left: 15px;
         margin-top: 8px;
@@ -141,16 +130,12 @@
         font-size: 22px;
         margin-top: 5px;
         margin-bottom: 5px;
-        font-family: Arial, Helvetica, sans-serif;
     }
     div.special-margin > p {
         font-size: 22px;
         margin-top: 6px;
-        font-family: Arial, Helvetica, sans-serif;
     }
-
     p.text1 {
-        font-family: Arial, Helvetica, sans-serif;
         position: relative;
         top: 30px;
         right: 50px;
@@ -283,7 +268,8 @@
         position: fixed;
         min-height: 100%;
         min-width: 100%;
-        background-image: url(photos/background/background-desktop.jpg);
+        background-image: url(/photos/background/background-desktop.jpg);
+        background-position: center;
         background-size: cover;
         z-index: -100;
     }
@@ -327,7 +313,6 @@
     }
     a.top-panel {
         text-decoration: none;
-        font-family: Arial;
         font-size: 27px;
         letter-spacing: 0.055em;
         color: #ffffff;
@@ -347,23 +332,10 @@
 /*!БЛОК ARTICLE*/
 
     main {
-        position: absolute;
-        margin-top: 60px;
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    div.head-text {
-        position: relative;
-        width: 90%;
-        margin-top: 40px;
-        height: auto;
-
-        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
-        background: rgba(255, 255, 255, 0.7);
-        border-radius: 20px;
-        backdrop-filter: blur(10px);
     }
 
     div.article {
@@ -380,7 +352,7 @@
 
     div.in-article-div {
         position: relative;
-        width: 90%;
+        width: 95%;
         margin: auto;
         height: auto;
         
@@ -406,7 +378,6 @@
 /*!НАСТРОЙКА ТЕКСТА В ARTICLE*/
 
     p.text1 {
-        font-family: Arial, Helvetica, sans-serif;
         position: relative;
         margin-top: 15px;
 
@@ -420,14 +391,13 @@
     
     div.text1 {
         position: relative;
-        width: 90%;
+        width: 95%;
         margin: auto;
     }
     span.bold {
         font-weight: bolder;
     }
     div.list > p {
-        font-family: Arial, Helvetica, sans-serif;
         font-size: 22px;
         margin-left: 15px;
         margin-top: 8px;
@@ -436,12 +406,10 @@
         font-size: 22px;
         margin-top: 5px;
         margin-bottom: 5px;
-        font-family: Arial, Helvetica, sans-serif;
     }
     div.special-margin > p {
         font-size: 22px;
         margin-top: 6px;
-        font-family: Arial, Helvetica, sans-serif;
     }
 
 
@@ -562,12 +530,13 @@
             padding: 0;
         }
         div.background {
-            position: absolute;
-            background-image: url(photos/background/background-desktop.jpg);
+            position: fixed;
+            /*TODO: Нужно найти фон*/
+            background-image: url(/photos/background/test-background.jpg);
+            background-position: center;
             min-width: 100%;
             min-height: 100%;
-            background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
             z-index: -100;
         }
         body {
@@ -607,7 +576,6 @@
     }
     a.top-panel {
         text-decoration: none;
-        font-family: Arial;
         font-size: 18px;
         color: #ffffff;
     }
@@ -628,24 +596,7 @@
     /*!БЛОК ARTICLE*/
 
     main {
-        position: absolute;
-        margin-top: 60px;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    div.head-text {
         position: relative;
-        width: 90%;
-        margin-top: 200px;
-        height: auto;
-
-        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
-        background: rgba(255, 255, 255, 0.7);
-        border-radius: 20px;
-        backdrop-filter: blur(10px);
 
         display: flex;
         flex-direction: column;
@@ -670,12 +621,12 @@
 
     div.text1 {
         position: relative;
-        width: 90%;
+        width: 93%;
     }
 
     div.in-article-div {
         position: relative;
-        width: 90%;
+        width: 93%;
         height: auto;
         
         padding-top: 10px;
@@ -699,7 +650,6 @@
 /*!НАСТРОЙКА ТЕКСТА В ARTICLE*/
 
     p.text1 {
-        font-family: Arial, Helvetica, sans-serif;
         position: relative;
         margin-top: 15px;
 
@@ -715,7 +665,6 @@
         font-weight: bolder;
     }
     div.list > p {
-        font-family: Arial, Helvetica, sans-serif;
         font-size: 22px;
         margin-left: 15px;
         margin-top: 8px;
@@ -724,12 +673,10 @@
         font-size: 22px;
         margin-top: 5px;
         margin-bottom: 5px;
-        font-family: Arial, Helvetica, sans-serifl;
     }
     div.special-margin > p {
         font-size: 22px;
         margin-top: 6px;
-        font-family: Arial, Helvetica, sans-serif;
     }
 
 
