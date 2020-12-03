@@ -1,0 +1,51 @@
+p::-moz-selection {
+    background:#C6AE92;
+    color: black;
+}
+p::-webkit-selection {
+    background:#C6AE92;
+    color: black;
+}
+p::selection {
+    background:#C6AE92;
+    color: black;
+}
+
+span::-moz-selection {
+    background:#C6AE92;
+    color: black;
+}
+span::-webkit-selection {
+    background:#C6AE92;
+    color: black;
+}
+span::selection {
+    background:#C6AE92;
+    color: black;
+}
+
+br::-moz-selection {
+    background:#C6AE92;
+    color: black;
+}
+br::-webkit-selection {
+    background:#C6AE92;
+    color: black;
+}
+br::selection {
+    background:#C6AE92;
+    color: black;
+}
+
+a::-moz-selection {
+    background:#C6AE92;
+    color:white;
+}
+a::-webkit-selection {
+    background:#C6AE92;
+    color: white;
+}
+a::selection {
+    background:#C6AE92;
+    color: white;
+}
