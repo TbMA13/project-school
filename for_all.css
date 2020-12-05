@@ -11,6 +11,25 @@ img::selection {
 img::-moz-selection {
     background: transparent;
 }
+footer {
+    /*background: linear-gradient(168.58deg, #ddc6a4 0% , #a07c45 50%, #ab967b 100%);*/
+    background: linear-gradient(168deg, #B09B7F -1.31%, #681F23 52.38%, #B09B7F 100.75%);
+    background-size: 200%;
+    animation-name: footer-animation;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes footer-animation {
+        0% {
+            background-position: left;
+        }
+        100% {
+            background-position: right;
+        }
+    }
+
 @media screen and (min-width: 1125px) {
     
     /*!ВСЕ*/
@@ -196,34 +215,12 @@ img::-moz-selection {
         position: relative;
         top: 100px;
         width: 100%;
-        height: 80px;
-        /*TODO доделать анимацию градиента
-        blur???*/
-        background: linear-gradient(115deg, #B09B7F , #681F23);
-        /*opacity: 0.9;
-        backdrop-filter: blur(10px);*/
-        background-size: 200%;
+        height: 60px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 
         display: flex;
         justify-content: center;
         align-items: center;
-
-        animation-name: footer-animation;
-        animation-duration: 60s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-    }
-    @keyframes footer-animation {
-        0% {
-            background-position: left;
-            /*background: linear-gradient(90deg, #B09B7F 1.29%, #681F23 100%);*/
-        }
-        100% {
-            background-position: right;
-            /*background: linear-gradient(225deg, #B09B7F 1.29%, #681F23 100%);*/
-        }
     }
     div.footer-text {
         width: 90%;
@@ -247,7 +244,7 @@ img::-moz-selection {
         height: 60px;
     }
     a.icon {
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.4);
         margin-left: 10px;
         border-radius: 9px;
         transition: background-color 1s linear;
@@ -276,7 +273,7 @@ img::-moz-selection {
 /*!СРедний размер*/
 /*!СРедний размер*/
 
-@media screen and (min-width: 551px) and (max-width: 1124px) {
+@media screen and (min-width: 686px) and (max-width: 1124px) {
         
     /*!ВСЕ*/
     
@@ -436,7 +433,7 @@ img::-moz-selection {
         position: relative;
         top: 100px;
         width: 100%;
-        height: 100px;
+        height: 60px;
 
         background-color: rgba(255, 255, 255, 0.15);
         backdrop-filter: blur(10px);
@@ -499,7 +496,7 @@ img::-moz-selection {
 /*!Маленький размер*/
 /*!Маленький размер*/
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 685px) {
         
         /*!ВСЕ*/
         * {
@@ -662,8 +659,7 @@ img::-moz-selection {
         top: 100px;
         width: 100%;
         height: 100px;
-
-        background: linear-gradient(100deg, #B09B7F 1.29%, #681F23 100%);
+        background-size: 1000% !important;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 
         display: flex;
