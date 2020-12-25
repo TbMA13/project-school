@@ -13,10 +13,11 @@ img::-moz-selection {
 }
 footer {
     /*background: linear-gradient(168.58deg, #ddc6a4 0% , #a07c45 50%, #ab967b 100%);*/
-    background: linear-gradient(168deg, #B09B7F -1.31%, #681F23 52.38%, #B09B7F 100.75%);
-    background-size: 200%;
+    /*background: linear-gradient(168deg, #B09B7F -1.31%, #681F23 52.38%, #B09B7F 100.75%);*/
+    background: linear-gradient(168deg, #a07c45 -1.31%,#ddc6a4 52.38%, #B09B7F 100.75%);
+    background-size: 150%;
     animation-name: footer-animation;
-    animation-duration: 30s;
+    animation-duration: 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -116,7 +117,7 @@ footer {
     }
     a.top-panel {
         text-decoration: none;
-        font-size: 33px;
+        font-size: 28px;
         letter-spacing: 0.055em;
         color: #ffffff;
     }
@@ -163,6 +164,7 @@ footer {
     }
 
     div.list {
+        margin-top: -5px;
         position: relative;
         width: 100%;
         height: auto;
@@ -183,7 +185,17 @@ footer {
     div.list > p {
         font-size: 22px;
         margin-left: 15px;
-        margin-top: 8px;
+        margin-top: 5px;
+    }
+    div.list > a{
+        text-decoration: none;
+        color: #B09B7F;
+        font-size: 22px;
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+    div.list > a:hover{
+        text-decoration: underline;
     }
     div.in-article-div > p {
         font-size: 22px;
@@ -196,7 +208,7 @@ footer {
     }
     p.text1 {
         position: relative;
-        top: 30px;
+        top: 20px;
         right: 50px;
         float: right;
         width: 45%;
@@ -240,24 +252,24 @@ footer {
         justify-content: space-between;
         align-items: center;
 
-        width: auto;
+        width: 120px;
         height: 60px;
     }
     a.icon {
         background-color: rgba(255, 255, 255, 0.4);
         margin-left: 10px;
         border-radius: 9px;
-        transition: background-color 1s linear;
+        transition: background-color 0.5s linear;
         transition-delay: 100ms;
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     img.icon {
-        width: 61px;
-        height: 61px;
+        width: 50px;
+        height: 50px;
     }
     #vk:hover {
         background-color: #2787F5;
@@ -379,6 +391,7 @@ footer {
     }
 
     div.list {
+        margin-top: -5px;
         position: relative;
         width: 100%;
         height: auto;
@@ -414,7 +427,14 @@ footer {
     div.list > p {
         font-size: 22px;
         margin-left: 15px;
-        margin-top: 8px;
+        margin-top: 5px;
+    }
+    div.list > a{
+        text-decoration: none;
+        color: #B09B7F;
+        font-size: 22px;
+        margin-left: 15px;
+        margin-top: 5px;
     }
     div.in-article-div > p {
         font-size: 22px;
@@ -549,7 +569,7 @@ footer {
     }
     a.top-panel {
         text-decoration: none;
-        font-size: 18px;
+        font-size: 19px;
         color: #ffffff;
     }
     .mobile-none {
@@ -610,6 +630,7 @@ footer {
     }
 
     div.list {
+        margin-top: -5px;
         position: relative;
         width: 100%;
         height: auto;
@@ -640,7 +661,14 @@ footer {
     div.list > p {
         font-size: 22px;
         margin-left: 15px;
-        margin-top: 8px;
+        margin-top: 5px;
+    }
+    div.list > a{
+        text-decoration: none;
+        color: #B09B7F;
+        font-size: 22px;
+        margin-left: 15px;
+        margin-top: 5px;
     }
     div.in-article-div > p {
         font-size: 20px;
@@ -658,7 +686,7 @@ footer {
         position: relative;
         top: 100px;
         width: 100%;
-        height: 100px;
+        height: 90px;
         background-size: 1000% !important;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 
@@ -680,12 +708,13 @@ footer {
         font-size: 19px;
     }
     div.icons {
+        margin-right: 15px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
 
-        width: auto;
+        width: 110px;
         height: 60px;
     }
     a.icon {
@@ -694,15 +723,15 @@ footer {
         border-radius: 9px;
         transition: background-color 1s linear;
         transition-delay: 100ms;
-        width: 40px;
-        height: 40px;
+        width: 47px;
+        height: 47px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     img.icon {
-        width: 61px;
-        height: 61px;
+        width: 55px;
+        height: 55px;
     }
     #vk{
         background-color: #2787F5;
