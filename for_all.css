@@ -38,6 +38,11 @@ footer {
         margin: 0;
         padding: 0;
     }
+    .scale-fix{
+        width: 100%;
+        min-width: 1125px;
+        max-width: 1450px;
+    }
     div.background {
         position: fixed;
         min-height: 100%;
