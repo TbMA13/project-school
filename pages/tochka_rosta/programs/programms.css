@@ -1,0 +1,25 @@
+a.programm-link {
+    color: black;
+    }
+
+    a.programm-link:active {
+        text-decoration: none;
+        color:black;
+    }
+    a.programm-link:visited{
+        color: black;
+        text-decoration: overline;
+    }
+    a.programm-link:hover{
+        color: red;
+    }
+
+a.programm-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+}
+p.programm-link {
+    padding-top: 15px;
+}
