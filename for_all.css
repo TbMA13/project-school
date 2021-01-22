@@ -1,10 +1,6 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
-.nav-menu
-{
-    display: none;
-}
 img::selection {
     background: transparent;
 }
@@ -12,8 +8,6 @@ img::-moz-selection {
     background: transparent;
 }
 footer {
-    /*background: linear-gradient(168.58deg, #ddc6a4 0% , #a07c45 50%, #ab967b 100%);*/
-    /*background: linear-gradient(168deg, #B09B7F -1.31%, #681F23 52.38%, #B09B7F 100.75%);*/
     background: linear-gradient(168deg, #a07c45 -1.31%,#ddc6a4 52.38%, #B09B7F 100.75%);
     background-size: 150%;
     animation-name: footer-animation;
@@ -129,7 +123,7 @@ footer {
         color: #ffffff;
     }
     a.moment {
-        color: #DE2D3C;
+        color: #ED1C24;
         /*#cfb297*/
         /*Может этот цвет?*/
     }
@@ -151,14 +145,14 @@ footer {
         margin: auto;
     }
 
-    div.article {
+    .article {
         position: relative;
         width: 90%;
         margin-top: 100px;
         height: auto;
     }
 
-    div.in-article-div {
+    .in-article-div {
         position: relative;
         width: 45%;
         height: auto;
@@ -170,14 +164,14 @@ footer {
         flex-direction: column;
     }
 
-    div.list {
+    .list {
         margin-top: -5px;
         position: relative;
         width: 100%;
         height: auto;
     }
 
-    div.special-margin {
+    .special-margin {
         margin: 20px 0 20px 0;
     }
 
@@ -360,6 +354,11 @@ footer {
     }
     a.top-panel:hover {
         color: #f3e9db;
+    }
+    .button
+    {
+        max-width: 40px;
+        max-height: 40px;
     }
 
 /*!БЛОК ARTICLE*/
@@ -603,7 +602,7 @@ footer {
     div.article {
         position: relative;
         width: 90%;
-        margin-top: 100px;
+        margin-top: 75px;
         height: auto;
 
         display: flex;

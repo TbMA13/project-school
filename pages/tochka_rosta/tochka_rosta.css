@@ -1,0 +1,94 @@
+.article
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#index_text
+{
+    text-align: center;
+    margin: 0 auto 15px 0;
+}
+footer
+{
+    
+    background: linear-gradient(168deg, #a07c45 -1.31%,#ddc6a4 52.38%, #B09B7F 100.75%) !important;
+}
+@media screen and (min-width: 1125px)
+{
+    .in_article_div
+    {
+        margin: 17px 0 17px 0;
+        position: relative;
+        width: 90%;
+    }
+    #index_img_tochka_rosta
+    {
+        position: relative;
+        max-width: 60%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 15px auto;
+    }
+    #index_img_tochka_rosta img
+    {
+        position: relative;
+        max-width: 100%;
+        border-radius: 10px;
+        object-fit: contain;
+    }
+    .in_article_div p
+    {
+        font-size: 22px;
+    }
+}
+@media screen and (min-width: 686px) and (max-width: 1124px)
+{
+    .in_article_div
+    {
+        position: relative;
+        width: 90%;
+    }
+    #index_img_tochka_rosta
+    {
+        position: relative;
+        max-width: 50%;
+    }
+    #index_img_tochka_rosta img
+    {
+        position: relative;
+        max-width: 100%;
+        object-fit: contain;
+    }
+    .in_article_div p
+    {
+        font-size: 21px;
+    }
+}
+@media screen and (max-width: 685px)
+{
+    .in_article_div
+    {
+        margin: 17px 0 17px 0;
+        position: relative;
+        width: 90%;
+    }
+    #index_img_tochka_rosta
+    {
+        position: relative;
+        max-width: 100%;
+    }
+    #index_img_tochka_rosta img
+    {
+        position: relative;
+        max-width: 100%;
+        object-fit: contain;
+        border-radius: 7px;
+    }
+    .in_article_div p
+    {
+        font-size: 20px;
+    }
+}
