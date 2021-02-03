@@ -8,14 +8,22 @@
     <link rel="stylesheet" href="colors.css">
     <link rel="shortcut icon" href="/photos/favicon/all.png" type="image/x-icon">
     <meta name="theme-color" content="#B09B7F">
+    <script src="/menu.js"></script>
     <title>МБОУ "СШ пос. Борское"</title>
 </head>
 <body>
 <div class="background">
 
 </div>
+<div id="nav_background">
+
+</div>
 <div class="nav-menu">
-    <img id="close_icon" title="Закрыть" src="/test/icons8-удалить-50.png">
+    
+<div id="nav_background_mobile">
+
+</div>
+    <img id="close_icon" onclick="close_nav_menu()" class="open_close_icon" title="Закрыть" src="/test/icons8-удалить-50.png">
     <div class="nav-menu-container">
     <div class="nav-menu-block">
         <a href="">Автобусы. Подвоз детей</a>
@@ -60,7 +68,7 @@
     </div>
     </div>
 </div>
-<header>
+<header id="header">
     <nav class="scale-fix">
         <a href="/index.html" class="top-panel moment">
             Главная
@@ -77,10 +85,10 @@
         <a href="/pages/documents/documents.html" class="top-panel">
             Документы
         </a>
-        <a href=""class="menu-button"><img class="button" src="/photos/menu.png"></a>
+        <img onclick="open_nav_menu()" class="button open_close_icon" src="/photos/menu.png">
     </nav>
 </header>
-<main class="scale-fix">
+<main main class="scale-fix">
     <div class="article">
         <div class="text1">
             <p class="text1">
@@ -98,9 +106,9 @@
                 <span class="bold">Электронная почта:</span>
             </p>
             <div class="list">
-                <a href="mailto:borskoe50@rambler.ru">
+                <p>
                     borskoe50@rambler.ru
-                </a>
+                </p>
             </div>
             <p>
                 <span class="bold">Телефоны:</span>
@@ -145,9 +153,9 @@
                     <span class="bold">Электронная почта:</span>
                 </p>
                 <div class="list">
-                    <a href="mailto:obrazgvard@baltnet.ru">
+                    <p>
                         obrazgvard@baltnet.ru
-                    </a>
+                    </p>
                 </div>
                 <p>
                     <span class="bold">Телефон:</span>
@@ -178,9 +186,9 @@
                 <span class="bold">Электронная почта:</span>
             </p>
             <div class="list">
-                <a href="mailto:borskoe50@rambler.ru">
+                <p>
                     borskoe50@rambler.ru
-                </a>
+                </p>
             </div>
             <p>
                 <span class="bold">Режим работы школы:</span>
@@ -409,4 +417,5 @@
     </div>
 </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </html>
