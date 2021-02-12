@@ -16,12 +16,15 @@ footer {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+body
+{
+    background-color: #B09B7F;
+}
 .background
 {
     
     background-repeat: no-repeat;
-    background-color: #B09B7F;
-}
+}/*
 @keyframes footer-animation {
         0% {
             background-position: left;
@@ -30,7 +33,7 @@ footer {
             background-position: right;
         }
     }
-
+*/
 @media screen and (min-width: 1125px) {
     
     /*!ВСЕ*/
@@ -72,9 +75,8 @@ footer {
         display: none;
         justify-content: space-around;
         align-items: center;
-        /*background:rgba(24, 26, 27, 0.4);*/
-        background:rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(20px);
+        background:rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(25px);
     }
     .nav-menu-container {
         display: flex;
@@ -82,7 +84,7 @@ footer {
         justify-content: space-between;
         align-items: center;
         
-        position: absolute;
+        position: relative;
         height: 90%;
         width: 90%;
         margin: auto;
@@ -116,8 +118,8 @@ footer {
         height: 50px;
         width: 50px;
         z-index: 101;
-        top: 8px;
-        right: 62px;
+        top: -15px;
+        right: 0px;
     }
     .open_close_icon
     {
@@ -160,7 +162,7 @@ footer {
         justify-content: space-around;
         align-items: center;
     }
-    a.top-panel {
+    .top-panel {
         position: relative;
         top: -2px;
         text-decoration: none;
@@ -169,7 +171,7 @@ footer {
         color: #ffffff;
     }
     a.moment {
-        color: #ED1C24;
+        color: #F09A27;
         /*#cfb297*/
         /*Может этот цвет?*/
     }
