@@ -3,12 +3,12 @@ function open_nav_menu() {
         document.body.style.overflow = 'hidden';
         $('.nav-menu').fadeIn("normal");
         $('.nav-menu').css('display', 'flex');
-        $('#nav_background').css('display', 'block');
+        //$('#nav_background').css('display', 'block');
     }
     if ($(document).width() < '686') {
         $('main').css('position', 'fixed');
         $('footer').css('display', 'none');
-        $('#nav_background').css('display', 'block');
+        //$('#nav_background').css('display', 'block');
         $('.nav-menu').fadeIn("normal");
         $('.nav-menu').css('display', 'flex');
     }
