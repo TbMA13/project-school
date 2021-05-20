@@ -9,12 +9,12 @@ img::-moz-selection, .top-panel::-moz-selection {
 }
 footer {
     background: linear-gradient(168deg, #a07c45 -1.31%,#ddc6a4 52.38%, #B09B7F 100.75%);
-    background-size: 150%;
-    animation-name: footer-animation;
+    /*background-size: 150%;
+    /*animation-name: footer-animation;
     animation-duration: 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: alternate;*/
 }
 body
 {
@@ -170,13 +170,11 @@ body
         letter-spacing: 0.055em;
         color: #ffffff;
     }
-    a.moment {
-        color: #F09A27;
-        /*#cfb297*/
-        /*Может этот цвет?*/
-    }
     a.top-panel:hover {
         color: #f3e9db;
+    }
+    .moment{
+        color: #6a5c49;
     }
     .button{
         max-width: 50px;
@@ -308,8 +306,8 @@ body
         background-color: rgba(255, 255, 255, 0.4);
         margin-left: 10px;
         border-radius: 9px;
-        transition: background-color 0.5s linear;
-        transition-delay: 100ms;
+        transition: background-color 0.3s linear;
+        transition-delay: 50ms;
         width: 45px;
         height: 45px;
         display: flex;
@@ -468,13 +466,11 @@ body
     .mobile-none {
         display: none;
     }
-    a.moment {
-        color: #DE2D3C;
-        /*#cfb297*/
-        /*?Может этот цвет?*/
-    }
     a.top-panel:hover {
         color: #f3e9db;
+    }
+    a.moment {
+        color: #856e52;
     }
     .button
     {
@@ -754,13 +750,12 @@ body
         font-size: 18px;
         color: #ffffff;
     }
+    a.moment {
+        color: #856e52;
+    }
     .mobile-none {
         display: none;
     }
-    a.moment {
-        color: #AB8A5E;
-    }
-
     img.button {
         position: relative;
         top: 2px;
