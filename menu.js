@@ -15,7 +15,6 @@ function open_nav_menu() {
 function close_nav_menu() {
     if ($(document).width() >= '686') {
         document.body.style.overflow = 'auto';
-        $('#nav_background').css('display', 'none');
         $('.nav-menu').fadeOut("normal");
         $('.nav-menu').css('display', 'flex');
     }

@@ -7,8 +7,14 @@ img::selection, .top-panel::selection {
 img::-moz-selection, .top-panel::-moz-selection {
     background: transparent;
 }
+/*????????*/
+header{
+    background-color: #B09B7F !important;
+    backdrop-filter: none !important;
+}
 footer {
-    background: linear-gradient(168deg, #a07c45 -1.31%,#ddc6a4 52.38%, #B09B7F 100.75%);
+    background: #B09B7F;
+    /*background: linear-gradient(168deg, #a07c45 -1.31%,#ddc6a4 52.38%, #B09B7F 100.75%);
     /*background-size: 150%;
     /*animation-name: footer-animation;
     animation-duration: 20s;
@@ -54,17 +60,6 @@ body
         background-position: center;
         background-size: cover;
         z-index: -100;
-    }
-    #nav_background
-    {
-        display: none;
-        position: fixed;
-        min-height: 110%;
-        min-width: 100%;
-        background-image: url(photos/background/background-desktop.jpg);
-        background-position: center;
-        background-size: cover;
-        z-index: 80;
     }
     .nav-menu {
         position: fixed;
@@ -174,7 +169,7 @@ body
         color: #f3e9db;
     }
     .moment{
-        color: #6a5c49;
+        color: #544634;
     }
     .button{
         max-width: 50px;
@@ -200,7 +195,7 @@ body
 
     .in-article-div {
         position: relative;
-        width: 45%;
+        width: 55%;
         height: auto;
         padding-top: 20px;
         margin-left: 30px;
@@ -230,6 +225,7 @@ body
         font-weight: bolder;
     }
     div.list > p {
+        text-align: justify;
         font-size: 22px;
         margin-left: 15px;
         margin-top: 5px;
@@ -245,20 +241,21 @@ body
         text-decoration: underline;
     }
     div.in-article-div > p {
+        text-align: justify;
         font-size: 22px;
         margin-top: 5px;
         margin-bottom: 5px;
     }
     div.special-margin > p {
+        text-align: justify;
         font-size: 22px;
         margin-top: 6px;
     }
     p.text1 {
-        position: relative;
+        position: absolute;
         top: 20px;
-        right: 50px;
-        float: right;
-        width: 45%;
+        right: 20px;
+        width: 40%;
 
         font-weight: bold;
         font-size: 35px;
@@ -326,11 +323,11 @@ body
     }
 }
 
-/*!СРедний размер*/
-/*!СРедний размер*/
-/*!СРедний размер*/
-/*!СРедний размер*/
-/*!СРедний размер*/
+
+
+
+
+
 
 @media screen and (min-width: 686px) and (max-width: 1124px) {
         
@@ -470,7 +467,7 @@ body
         color: #f3e9db;
     }
     a.moment {
-        color: #856e52;
+        color: #544634;
     }
     .button
     {
@@ -657,12 +654,11 @@ body
             z-index: 75;
             height: 130vh;
             width: 110vw;
-            background:rgba(255,255, 255, 0.6);
-            backdrop-filter: blur(20px);
+            background:whitesmoke;
         }
         .nav-menu {
             position: absolute;
-            height: auto;
+            height: 100vh;
             width: 100vw;
             z-index: 100;
             max-height: 800px;
@@ -707,8 +703,8 @@ body
             position: fixed;
             height: 32px;
             width: 32px;
-            top: 20px;
-            right: 20px;
+            top: 17px;
+            right: 13px;
             z-index: 101;
         }
         body {
@@ -751,7 +747,7 @@ body
         color: #ffffff;
     }
     a.moment {
-        color: #856e52;
+        color: #544634;
     }
     .mobile-none {
         display: none;
