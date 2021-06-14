@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="colors.css">
     <link rel="shortcut icon" href="/photos/favicon/all.png" type="image/x-icon">
     <meta name="theme-color" content="#B09B7F">
+    <script src="/for_invalid.js"></script>
     <script src="/menu.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>МБОУ "СШ пос. Борское"</title>
@@ -22,8 +23,8 @@
 
         </div>
         <div class="scale-fix nav-menu-container">
-            <img id="close_icon" onclick="close_nav_menu()" class="open_close_icon" title="Закрыть"
-                src="/test/icons8-удалить-50.png">
+            <a href="#" onclick="close_nav_menu()" title="Закрыть" alt="Закрыть меню"><img id="close_icon"
+                    class="open_close_icon" src="/test/icons8-удалить-50.png"></a>
             <div class="nav-menu-block">
                 <a href="">Автобусы. Подвоз детей</a>
                 <a href="">Адаптированные основные общеобразовательные программы на 2020-2021 учебный год</a>
@@ -70,7 +71,46 @@
         </div>
     </div>
     <header id="header">
+        <div id="for-invalid">
+            <div id="font-size">
+                <p class="for-invalid-paragraph">Размер шрифта:</p>
+                <div id="small-size">А</div>
+                <div id="middle-size">А</div>
+                <div id="high-size">А</div>
+            </div>
+            <div id="color-scheme">
+                <p class="for-invalid-paragraph">Цветовая схема:</p>
+                <div id="white-black">А</div>
+                <div id="black-white">А</div>
+                <div id="blue">А</div>
+                <div id="brown">А</div>
+                <div id="green-brown">А</div>
+            </div>
+            <div id="img-on-off">
+                <p class="for-invalid-paragraph">Изображения:</p>
+                <div>
+                    <div><input type="radio" name="img-on-off" checked id="on"><label for="on">Вкл</label></div>
+                    <div><input type="radio" name="img-on-off" id="off"><label for="off">Выкл</label></div>
+                </div>
+            </div>
+            <div id="font">
+                <p class="for-invalid-paragraph">Шрифт:</p>
+                <div>
+                    <a href="#">Без засечек</a>
+                    <a href="#">С засечками</a>
+                </div>
+            </div>
+            <div id="font-interval">
+                <p class="for-invalid-paragraph">Межбуквенный интервал:</p>
+                <div>
+                    <a href="#">Стандартный</a>
+                    <a href="#">Средний</a>
+                    <a href="#">Большой</a>
+                </div>
+            </div>
+        </div>
         <nav class="scale-fix">
+            <a href="#" onclick="choiseInvalidBlock(score)"><img src="/photos/icons/invalid_icon.png" alt="Возможности для слабовидящих"></a>
             <a href="/index.html" class="header-link moment">
                 Главная
             </a>
@@ -86,7 +126,8 @@
             <a href="/pages/documents/documents.html" class="header-link">
                 Документы
             </a>
-            <img onclick="open_nav_menu()" title="Меню" class="button open_close_icon" src="/photos/menu.png">
+            <a href="#" onclick="open_nav_menu()" alt="Открыть меню" title="Меню"><img class="button open_close_icon"
+                    src="/photos/menu.png"></a>
         </nav>
     </header>
     <main main class="scale-fix">
@@ -101,7 +142,7 @@
                     городского округа"
                 </p>
                 <p>
-                    238220, Калининградская область, Гвардейский район, пос. Борское, д. 50
+                    238220, Калининградская область, Гвардейский район, <br>пос. Борское, д. 50
                 </p>
                 <p>
                     <span class="bold">Электронная почта:</span>
@@ -123,9 +164,9 @@
             </div>
         </div>
         <div class="article">
-                <h1>
-                    Основные сведения о школе
-                </h1>
+            <h1>
+                Основные сведения о школе
+            </h1>
             <div class="in-article-div">
                 <p>
                     Официальная дата создания школы - <br>14 октября 1946 года
@@ -254,9 +295,9 @@
             </div>
         </div>
         <div class="article">
-                <h1>
-                    Платежные реквизиты школы
-                </h1>
+            <h1>
+                Платежные реквизиты школы
+            </h1>
             <div class="in-article-div">
                 <p>
                     Полное наименование школы: Муниципальное бюджетное общеобразовательное учреждение "Средняя школа
@@ -296,9 +337,9 @@
             </div>
         </div>
         <div class="article">
-                <h1>
-                    Полезные ссылки
-                </h1>
+            <h1>
+                Полезные ссылки
+            </h1>
             <div id="flex-div-article">
                 <div class="useful-links-div">
                     <div class="useful-link-div">
