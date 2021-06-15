@@ -286,6 +286,8 @@ img::-moz-selection,
         width: 90%;
         margin-top: 100px;
         height: auto;
+        display: flex;
+        flex-direction: row;
     }
 
     .in-article-div {
@@ -706,12 +708,6 @@ img::-moz-selection,
     }
 
 }
-
-/*!Маленький размер*/
-/*!Маленький размер*/
-/*!Маленький размер*/
-/*!Маленький размер*/
-/*!Маленький размер*/
 
 @media screen and (max-width: 685px) {
 
