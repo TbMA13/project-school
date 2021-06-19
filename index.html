@@ -74,35 +74,35 @@
         <div id="for-invalid">
             <div id="font-size">
                 <p class="for-invalid-paragraph">Размер шрифта:</p>
-                <div id="small-size">А</div>
-                <div id="middle-size">А</div>
-                <div id="high-size">А</div>
+                <div id="small-size"><p>А</p></div>
+                <div id="middle-size"><p>А</p></div>
+                <div id="high-size"><p>А</p></div>
             </div>
             <div id="color-scheme">
                 <p class="for-invalid-paragraph">Цветовая схема:</p>
-                <div id="white-black">А</div>
-                <div id="black-white">А</div>
-                <div id="blue">А</div>
-                <div id="brown">А</div>
-                <div id="green-brown">А</div>
+                <div id="white-black"><p>А</p></div>
+                <div id="black-white"><p>А</p></div>
+                <div id="blue"><p>А</p></div>
+                <div id="brown"><p>А</p></div>
+                <div id="green-brown"><p>А</p></div>
             </div>
             <div id="img-on-off">
                 <p class="for-invalid-paragraph">Изображения:</p>
-                <div>
+                <div class="margin-left">
                     <div><input type="radio" name="img-on-off" checked id="on"><label for="on">Вкл</label></div>
                     <div><input type="radio" name="img-on-off" id="off"><label for="off">Выкл</label></div>
                 </div>
             </div>
             <div id="font">
                 <p class="for-invalid-paragraph">Шрифт:</p>
-                <div>
+                <div class="margin-left">
                     <a href="#">Без засечек</a>
                     <a href="#">С засечками</a>
                 </div>
             </div>
             <div id="font-interval">
                 <p class="for-invalid-paragraph">Межбуквенный интервал:</p>
-                <div>
+                <div class="margin-left">
                     <a href="#">Стандартный</a>
                     <a href="#">Средний</a>
                     <a href="#">Большой</a>
@@ -110,7 +110,7 @@
             </div>
         </div>
         <nav class="scale-fix">
-            <a href="#" onclick="choiseInvalidBlock(score)"><img src="/photos/icons/invalid_icon.png" alt="Возможности для слабовидящих"></a>
+            <!--<img id="invalid_image" onclick="invalid(i)" src="/photos/icons/invalid_icon.png" alt="Возможности для слабовидящих">-->
             <a href="/index.html" class="header-link moment">
                 Главная
             </a>
@@ -126,8 +126,7 @@
             <a href="/pages/documents/documents.html" class="header-link">
                 Документы
             </a>
-            <a href="#" onclick="open_nav_menu()" alt="Открыть меню" title="Меню"><img class="button open_close_icon"
-                    src="/photos/menu.png"></a>
+            <img onclick="open_nav_menu()" alt="Открыть меню" title="Меню" class="button open_close_icon" src="/photos/menu.png">
         </nav>
     </header>
     <main main class="scale-fix">
