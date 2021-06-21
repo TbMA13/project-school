@@ -84,6 +84,6 @@ function highFontSize() {
 //!Изменение цветовой гаммы
 
 function colorChange(textColor, blockColor) {
-    let background = document.getElementsByClassName('background')
-    background.style.background = "none";
+    document.getElementById('background').style.background = blockColor;
+    document.
 }
