@@ -1,53 +1,26 @@
-/*const forInvalidBlock = document.getElementById('for-invalid');
-let i = 0;
-
-function invalid(i, forInvalidBlock) {
-    for (let i; true; i += 1) {
-        if (i === 0) {
-            forInvalidBlock.classList.add('visible');
-        } else if ((i % 2) !== 0) {
-            forInvalidBlock.style.animationDirection = reverse;
-        } else if ((i % 2) !== 1) {
-            forInvalidBlock.style.animationDirection = normal;
-        }
-    }
-}
-*/
-/*function invalid(score) {
+function invalid() {
     const forInvalidBlock = document.getElementById('for-invalid');
-    if (score === 0) {
-        score += 1;
-        forInvalidBlock.classList.add('visible');
-    }
-    else if ((score % 2) !== 0) {
-        score += 1;
-        forInvalidBlock.style.animationDirection = reverse;
-    }
-    else if ((score % 2) !== 1) {
-        score += 1;
-        forInvalidBlock.style.animationDirection = normal;
-    }
-}
-*/
-/*
-function choiseInvalidBlock(score) {
-    if (score === 0) {
-        hideInvalidBlock();
-    } else if (score === 1) {
-        visionInvalidBlock();
+    if (forInvalidBlock.style.height === '0px') {
+        forInvalidBlock.style.height = 'auto';
+        forInvalidBlock.style.paddingTop = '10px';
+        forInvalidBlock.style.paddingBottom = '10px';
+        forInvalidBlock.style.opacity = '1';
+    } else {
+        forInvalidBlock.style.height = '0';
+        forInvalidBlock.style.paddingTop = '0';
+        forInvalidBlock.style.paddingBottom = '0';
+        forInvalidBlock.style.opacity = '0';
     }
 }
 
-function hideInvalidBlock() {
-    score += 1;
-    const forInvalidBlock = document.getElementById('for-invalid');
-    forInvalidBlock.classList.remove('visible');
-    forInvalidBlock.classList.add('hide');
+function smallFontSize() {
+    //изменить шрифт хедера
+    let headerLink = document.getElementsByClassName('header-link');
+    for (let i = 0; i < headerLink.length; i++){
+        headerLink[i].style.fontSize = '22px';
+    }
+    //изменить шрифт навменю
+    let nav
+    //изменить шрифт основных блоков
+    ///изменить шрифт футера
 }
-
-function visionInvalidBlock() {
-    score -= 1;
-    const forInvalidBlock = document.getElementById('for-invalid');
-    forInvalidBlock.classList.remove('hide');
-    forInvalidBlock.classList.add('visible');
-}*/

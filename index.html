@@ -12,7 +12,7 @@
     <script src="/for_invalid.js"></script>
     <script src="/menu.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>МБОУ "СШ пос. Борское"</title>
+    <title>МБОУ "СШ пос. Борское" - Главная страница</title>
 </head>
 
 <body>
@@ -74,43 +74,62 @@
         <div id="for-invalid">
             <div id="font-size">
                 <p class="for-invalid-paragraph">Размер шрифта:</p>
-                <div id="small-size"><p>А</p></div>
-                <div id="middle-size"><p>А</p></div>
-                <div id="high-size"><p>А</p></div>
+                <div onclick="smallFontSize()" tabindex="1" id="small-size">
+                    <p>А</p>
+                </div>
+                <div tabindex="2" id="middle-size">
+                    <p>А</p>
+                </div>
+                <div tabindex="3" id="high-size">
+                    <p>А</p>
+                </div>
             </div>
             <div id="color-scheme">
                 <p class="for-invalid-paragraph">Цветовая схема:</p>
-                <div id="white-black"><p>А</p></div>
-                <div id="black-white"><p>А</p></div>
-                <div id="blue"><p>А</p></div>
-                <div id="brown"><p>А</p></div>
-                <div id="green-brown"><p>А</p></div>
+                <div tabindex="4" id="white-black">
+                    <p>А</p>
+                </div>
+                <div tabindex="5" id="black-white">
+                    <p>А</p>
+                </div>
+                <div tabindex="6" id="blue">
+                    <p>А</p>
+                </div>
+                <div tabindex="7" id="brown">
+                    <p>А</p>
+                </div>
+                <div tabindex="8" id="green-brown">
+                    <p>А</p>
+                </div>
             </div>
             <div id="img-on-off">
                 <p class="for-invalid-paragraph">Изображения:</p>
                 <div class="margin-left">
-                    <div><input type="radio" name="img-on-off" checked id="on"><label for="on">Вкл</label></div>
-                    <div><input type="radio" name="img-on-off" id="off"><label for="off">Выкл</label></div>
+                    <div><input tabindex="9" type="radio" name="img-on-off" checked id="on"><label for="on">Вкл</label>
+                    </div>
+                    <div><input tabindex="10" type="radio" name="img-on-off" id="off"><label for="off">Выкл</label>
+                    </div>
                 </div>
             </div>
             <div id="font">
                 <p class="for-invalid-paragraph">Шрифт:</p>
                 <div class="margin-left">
-                    <a href="#">Без засечек</a>
-                    <a href="#">С засечками</a>
+                    <a href="#" style="font-family: Arial, Helvetica, sans-serif;">Без засечек</a>
+                    <a href="#" style="font-family: 'Times New Roman', Times, serif;">С засечками</a>
                 </div>
             </div>
             <div id="font-interval">
                 <p class="for-invalid-paragraph">Межбуквенный интервал:</p>
                 <div class="margin-left">
                     <a href="#">Стандартный</a>
-                    <a href="#">Средний</a>
-                    <a href="#">Большой</a>
+                    <a href="#" style="letter-spacing: 3px;">Средний</a>
+                    <a href="#" style="letter-spacing: 4px;">Большой</a>
                 </div>
             </div>
         </div>
         <nav class="scale-fix">
-            <!--<img id="invalid_image" onclick="invalid(i)" src="/photos/icons/invalid_icon.png" alt="Возможности для слабовидящих">-->
+            <img tabindex="0" id="invalid_image" onclick="invalid()" src="/photos/icons/invalid_icon.png"
+                alt="Возможности для слабовидящих">
             <a href="/index.html" class="header-link moment">
                 Главная
             </a>
@@ -126,7 +145,8 @@
             <a href="/pages/documents/documents.html" class="header-link">
                 Документы
             </a>
-            <img onclick="open_nav_menu()" alt="Открыть меню" title="Меню" class="button open_close_icon" src="/photos/menu.png">
+            <img tabindex="21" onclick="open_nav_menu()" alt="Открыть меню" title="Меню" class="button open_close_icon"
+                src="/photos/menu.png">
         </nav>
     </header>
     <main main class="scale-fix">
