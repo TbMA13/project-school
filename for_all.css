@@ -31,7 +31,7 @@ input:focus,
 }
 
 #small-size {
-    font-size: 15px !important;
+    font-size: 13px !important;
 }
 
 #middle-size {
@@ -91,7 +91,7 @@ input:focus,
         position: fixed;
         min-height: 110%;
         min-width: 100%;
-        background-image: url(photos/background/background-desktop.jpg);
+        background: url(photos/background/background-desktop.jpg);
         background-position: center;
         background-size: cover;
         z-index: -100;
@@ -187,9 +187,6 @@ input:focus,
     }
 
     #for-invalid {
-        opacity: 0;
-        height: 0;
-        padding: 0;
 
         z-index: 51;
         width: 100%;

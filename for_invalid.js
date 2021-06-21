@@ -1,3 +1,7 @@
+window.onload = function () {
+    document.getElementById('invalid_image').onclick = invalid;
+}
+
 function invalid() {
     const forInvalidBlock = document.getElementById('for-invalid');
     if (forInvalidBlock.style.height === '0px') {
@@ -13,14 +17,73 @@ function invalid() {
     }
 }
 
-function smallFontSize() {
-    //изменить шрифт хедера
-    let headerLink = document.getElementsByClassName('header-link');
-    for (let i = 0; i < headerLink.length; i++){
-        headerLink[i].style.fontSize = '22px';
+//!Изменение размера шрифта
+function fontSizeChange(sourse, fontSize) {
+    for (let i = 0; i < sourse.length; i++) {
+        sourse[i].style.fontSize = fontSize;
     }
-    //изменить шрифт навменю
-    let nav
-    //изменить шрифт основных блоков
-    ///изменить шрифт футера
+}
+function invalidBlockRepair() {
+    //Восстановление блока для слабовидящих
+    fontSizeChange(document.getElementsByClassName('for-invalid-paragraph'), '18px');
+    document.getElementById('small-font').style.fontSize = '15px';
+    document.getElementById('middle-font').style.fontSize = '17px';
+    document.getElementById('high-font').style.fontSize = '20px';
+    fontSizeChange(document.getElementsByClassName('color-paragraph'), '16px');
+}
+
+function smallFontSize() {
+    let headerLink = document.getElementsByClassName('header-link');
+    let navLink = document.body.getElementsByClassName('nav-menu-link');
+    let headingText = document.getElementsByTagName('h1');
+    let paragraph = document.getElementsByTagName('p');
+
+    if (document.documentElement.clientWidth > 1125) {
+        fontSizeChange(headerLink, '20px');
+        fontSizeChange(navLink, '12px');
+        fontSizeChange(headingText, '28px');
+        fontSizeChange(paragraph, '18px');
+        fontSizeChange(document.getElementsByClassName('useful-link'), '18px');
+        invalidBlockRepair();
+    }
+}
+
+function middleFontSize() {
+    let headerLink = document.getElementsByClassName('header-link');
+    let navLink = document.getElementsByClassName('nav-menu-link');
+    let headingText = document.getElementsByTagName('h1');
+    let paragraph = document.getElementsByTagName('p');
+
+    if (document.documentElement.clientWidth > 1125) {
+        fontSizeChange(headerLink, '28px');
+        fontSizeChange(navLink, '18px');
+        fontSizeChange(headingText, '35px');
+        fontSizeChange(paragraph, '22px');
+        fontSizeChange(document.getElementsByClassName('useful-link'), '22px');
+        fontSizeChange(document.getElementsByClassName('footer-text'),'25px')
+        invalidBlockRepair();
+    }
+}
+function highFontSize() {
+    let headerLink = document.getElementsByClassName('header-link');
+    let navLink = document.getElementsByClassName('nav-menu-link');
+    let headingText = document.getElementsByTagName('h1');
+    let paragraph = document.getElementsByTagName('p');
+
+    if (document.documentElement.clientWidth > 1125) {
+        fontSizeChange(headerLink, '33px');
+        fontSizeChange(navLink, '21px');
+        fontSizeChange(headingText, '39px');
+        fontSizeChange(paragraph, '26px');
+        fontSizeChange(document.getElementsByClassName('useful-link'), '26px');
+        fontSizeChange(document.getElementsByClassName('footer-text'),'29px')
+        invalidBlockRepair();
+    }
+}
+
+//!Изменение цветовой гаммы
+
+function colorChange(textColor, blockColor) {
+    let background = document.getElementsByClassName('background')
+    background.style.background = "none";
 }
