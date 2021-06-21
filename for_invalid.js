@@ -23,6 +23,7 @@ function fontSizeChange(sourse, fontSize) {
         sourse[i].style.fontSize = fontSize;
     }
 }
+
 function invalidBlockRepair() {
     //Восстановление блока для слабовидящих
     fontSizeChange(document.getElementsByClassName('for-invalid-paragraph'), '18px');
@@ -60,10 +61,11 @@ function middleFontSize() {
         fontSizeChange(headingText, '35px');
         fontSizeChange(paragraph, '22px');
         fontSizeChange(document.getElementsByClassName('useful-link'), '22px');
-        fontSizeChange(document.getElementsByClassName('footer-text'),'25px')
+        fontSizeChange(document.getElementsByClassName('footer-text'), '25px')
         invalidBlockRepair();
     }
 }
+
 function highFontSize() {
     let headerLink = document.getElementsByClassName('header-link');
     let navLink = document.getElementsByClassName('nav-menu-link');
@@ -76,14 +78,30 @@ function highFontSize() {
         fontSizeChange(headingText, '39px');
         fontSizeChange(paragraph, '26px');
         fontSizeChange(document.getElementsByClassName('useful-link'), '26px');
-        fontSizeChange(document.getElementsByClassName('footer-text'),'29px')
+        fontSizeChange(document.getElementsByClassName('footer-text'), '29px')
         invalidBlockRepair();
     }
 }
 
 //!Изменение цветовой гаммы
+function manyColors(path, color, property) {
+    if (property === 'background'){
+        for (let i = 0; path.length > i; i++) {
+            path[i].style.background = color;
+        }
+    }
+    else if (property === 'color') {
+        for (let i = 0; path.length > i; i++) {
+            path[i].style.color = color;
+        }
+    }
+}
 
 function colorChange(textColor, blockColor) {
     document.getElementById('background').style.background = blockColor;
-    document.
+    manyColors(document.getElementsByClassName('article'), blockColor, 'background');
+    manyColors(document.getElementsByTagName('h1'), textColor, 'color');
+    manyColors(document.getElementsByTagName('p'), textColor, 'color');
+    manyColors(document.getElementsByTagName('a'), textColor, 'color');
+    document.getElementsByTagName('footer').style.background = 
 }
