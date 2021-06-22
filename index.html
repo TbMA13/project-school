@@ -92,16 +92,16 @@
                 <div onclick="colorChange('#ffffffff' ,'#000')" tabindex="4" id="white-black">
                     <p class="color-paragraph">А</p>
                 </div>
-                <div tabindex="5" id="black-white">
+                <div onclick="colorChange('#000' ,'#fff')" tabindex="5" id="black-white">
                     <p class="color-paragraph">А</p>
                 </div>
-                <div tabindex="6" id="blue">
+                <div tabindex="6" onclick="colorChange('#063462' ,'#9ed1ff')" id="blue">
                     <p class="color-paragraph">А</p>
                 </div>
-                <div tabindex="7" id="brown">
+                <div onclick="colorChange('#59422e' ,'#f7f3d6')" tabindex="7" id="brown">
                     <p class="color-paragraph">А</p>
                 </div>
-                <div tabindex="8" id="green-brown">
+                <div onclick="colorChange('#a9dd38' ,'#59422e')" tabindex="8" id="green-brown">
                     <p class="color-paragraph">А</p>
                 </div>
             </div>
@@ -117,16 +117,16 @@
             <div id="font">
                 <p class="for-invalid-paragraph">Шрифт:</p>
                 <div class="margin-left">
-                    <a href="#" style="font-family: Arial, Helvetica, sans-serif;">Без засечек</a>
-                    <a href="#" style="font-family: 'Times New Roman', Times, serif;">С засечками</a>
+                    <p class='paragraph-js' onclick="fontChange(Arial)" style="font-family: Arial, Helvetica, sans-serif;">Без засечек</p>
+                    <p class='paragraph-js' onclick="fontChange(TimesNewRoman)" style="font-family: 'Times New Roman', Times, serif;">С засечками</p>
                 </div>
             </div>
             <div id="font-interval">
                 <p class="for-invalid-paragraph">Межбуквенный интервал:</p>
                 <div class="margin-left">
-                    <a href="#">Стандартный</a>
-                    <a href="#" style="letter-spacing: 3px;">Средний</a>
-                    <a href="#" style="letter-spacing: 4px;">Большой</a>
+                    <p class='paragraph-js'>Стандартный</p>
+                    <p class='paragraph-js' style="letter-spacing: 3px;">Средний</p>
+                    <p class='paragraph-js' style="letter-spacing: 4px;">Большой</p>
                 </div>
             </div>
         </div>

@@ -31,6 +31,10 @@ function invalidBlockRepair() {
     document.getElementById('middle-font').style.fontSize = '17px';
     document.getElementById('high-font').style.fontSize = '20px';
     fontSizeChange(document.getElementsByClassName('color-paragraph'), '16px');
+    for (let i = 0; i < document.getElementsByClassName('paragraph-js').length; i++) {
+        document.getElementsByClassName('paragraph-js')[i].style.fontSize = "16px";
+    }
+    
 }
 
 function smallFontSize() {
@@ -85,12 +89,11 @@ function highFontSize() {
 
 //!Изменение цветовой гаммы
 function manyColors(path, color, property) {
-    if (property === 'background'){
+    if (property === 'background') {
         for (let i = 0; path.length > i; i++) {
             path[i].style.background = color;
         }
-    }
-    else if (property === 'color') {
+    } else if (property === 'color') {
         for (let i = 0; path.length > i; i++) {
             path[i].style.color = color;
         }
@@ -103,5 +106,29 @@ function colorChange(textColor, blockColor) {
     manyColors(document.getElementsByTagName('h1'), textColor, 'color');
     manyColors(document.getElementsByTagName('p'), textColor, 'color');
     manyColors(document.getElementsByTagName('a'), textColor, 'color');
-    document.getElementsByTagName('footer').style.background = 
+    manyColors(document.getElementsByTagName('footer'), blockColor, 'background');
+    manyColors(document.getElementsByTagName('nav'), blockColor, 'background')
+    document.getElementById('header').style.background = blockColor;
+    document.getElementById('for-invalid').style.background = blockColor;
+    //восстановление блока для слабовидящих
+    document.getElementById('small-font').style.color = 'black';
+    document.getElementById('middle-font').style.color = 'black';
+    document.getElementById('high-font').style.color = 'black';
+    for (let i = 0; i < document.getElementsByClassName('color-paragraph').length; i++) {
+        document.getElementsByClassName('color-paragraph')[i].style = "";
+    }
+    manyColors(document.getElementsByTagName('label'), textColor, 'color');
+    for (let i = 0; i < document.getElementsByClassName('paragraph-js').length; i++) {
+        document.getElementsByClassName('paragraph-js')[i].style.color = "";
+    }
+}
+
+//!работа с изображениями
+
+
+
+//!выбор шрифта
+
+function fontChange(font) {
+    
 }

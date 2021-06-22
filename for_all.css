@@ -25,9 +25,9 @@ img::-moz-selection,
 input:focus,
 #font div a:focus,
 #font-interval div a:focus {
-    webkit-box-shadow: 4px 4px 20px 5px rgba(0, 30, 255, 0.53);
-    -moz-box-shadow: 4px 4px 20px 5px rgba(0, 30, 255, 0.53);
-    box-shadow: 4px 4px 20px 5px rgba(0, 30, 255, 0.53);
+    webkit-box-shadow: 0 0 10px 3px rgba(0, 30, 255, 0.53);
+    -moz-box-shadow: 0 0 10px 3px rgba(0, 30, 255, 0.53);
+    box-shadow: 0 0 10px 3px rgba(0, 30, 255, 0.53);
 }
 
 #small-size {
@@ -171,7 +171,7 @@ input:focus,
         margin-left: 10px;
     }
 
-    .margin-left a {
+    .margin-left p {
         font-weight: bold;
         background: white;
         text-decoration: none;
@@ -181,7 +181,8 @@ input:focus,
         margin-bottom: 2px;
     }
 
-    .margin-left a:hover {
+    .margin-left p:hover {
+        cursor: pointer;
         background: black;
         color: white;
     }
