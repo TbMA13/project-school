@@ -110,6 +110,7 @@ function colorChange(textColor, blockColor) {
     manyColors(document.getElementsByTagName('nav'), blockColor, 'background')
     document.getElementById('header').style.background = blockColor;
     document.getElementById('for-invalid').style.background = blockColor;
+    document.getElementById('nav_background_mobile').style.background = blockColor;
     //восстановление блока для слабовидящих
 
     document.getElementById('small-font').style.color = 'black';
@@ -156,8 +157,8 @@ function fontChange(font) {
     for (let i = 0; i < document.getElementsByTagName('a').length; i++) {
         document.getElementsByTagName('a')[i].style.fontFamily = font;
     }
-    document.getElementById('arial-click').style.fontFamily = 'Arial';
-    document.getElementById('times-new-roman-click').style.fontFamily = 'TimresNewRoman';
+    document.getElementById('arial-click').style.fontFamily = 'Arial, Helvetica, sans-serif';
+    document.getElementById('times-new-roman-click').style.fontFamily = 'TimesNewRoman, Times, serif';
 }
 
 //!Изменение межбуквеннго интервала
@@ -198,6 +199,7 @@ function invalidReset() {
     manyColors(document.getElementsByTagName('nav'), "", 'background')
     document.getElementById('header').style.background = "";
     document.getElementById('for-invalid').style.background = "";
+    document.getElementById('nav_background_mobile').style.background = "";
     manyColors(document.getElementsByTagName('label'), "", 'color');
 
     document.getElementById('arial-click').style.fontFamily = 'Arial';
