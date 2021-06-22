@@ -26,7 +26,7 @@ function fontSizeChange(sourse, fontSize) {
 
 function invalidBlockRepair() {
     //Восстановление блока для слабовидящих
-    fontSizeChange(document.getElementsByClassName('for-invalid-paragraph'), '18px');
+    //fontSizeChange(document.getElementsByClassName('for-invalid-paragraph'), '18px');
     document.getElementById('small-font').style.fontSize = '15px';
     document.getElementById('middle-font').style.fontSize = '17px';
     document.getElementById('high-font').style.fontSize = '20px';
@@ -34,7 +34,7 @@ function invalidBlockRepair() {
     for (let i = 0; i < document.getElementsByClassName('paragraph-js').length; i++) {
         document.getElementsByClassName('paragraph-js')[i].style.fontSize = "16px";
     }
-    
+
 }
 
 function smallFontSize() {
@@ -111,6 +111,7 @@ function colorChange(textColor, blockColor) {
     document.getElementById('header').style.background = blockColor;
     document.getElementById('for-invalid').style.background = blockColor;
     //восстановление блока для слабовидящих
+
     document.getElementById('small-font').style.color = 'black';
     document.getElementById('middle-font').style.color = 'black';
     document.getElementById('high-font').style.color = 'black';
@@ -124,11 +125,87 @@ function colorChange(textColor, blockColor) {
 }
 
 //!работа с изображениями
-
+function imagesOnOff(change) {
+    if (change === 'off') {
+        document.getElementById('background').style.background = 'none';
+        for (let i = 0; i < document.getElementsByTagName('img').length; i++) {
+            document.getElementsByTagName('img')[i].style.opacity = "0";
+        }
+    }
+    if (change === 'on') {
+        document.getElementById('background').style.background = '';
+        for (let i = 0; i < document.getElementsByTagName('img').length; i++) {
+            document.getElementsByTagName('img')[i].style.opacity = "1";
+        }
+    }
+    for (let i = 0; i < document.getElementsByClassName('icon').length; i++) {
+        document.getElementsByClassName('iconJS')[i].style.opacity = "1";
+    }
+}
 
 
 //!выбор шрифта
 
 function fontChange(font) {
-    
+    for (let i = 0; i < document.getElementsByTagName('p').length; i++) {
+        document.getElementsByTagName('p')[i].style.fontFamily = font;
+    }
+    for (let i = 0; i < document.getElementsByTagName('h1').length; i++) {
+        document.getElementsByTagName('h1')[i].style.fontFamily = font;
+    }
+    for (let i = 0; i < document.getElementsByTagName('a').length; i++) {
+        document.getElementsByTagName('a')[i].style.fontFamily = font;
+    }
+    document.getElementById('arial-click').style.fontFamily = 'Arial';
+    document.getElementById('times-new-roman-click').style.fontFamily = 'TimresNewRoman';
+}
+
+//!Изменение межбуквеннго интервала
+
+function letterSpacingChange(value) {
+    for (let i = 0; i < document.getElementsByTagName('p').length; i++) {
+        document.getElementsByTagName('p')[i].style.letterSpacing = value;
+    }
+    for (let i = 0; i < document.getElementsByTagName('h1').length; i++) {
+        document.getElementsByTagName('h1')[i].style.letterSpacing = value;
+    }
+    for (let i = 0; i < document.getElementsByTagName('a').length; i++) {
+        document.getElementsByTagName('a')[i].style.letterSpacing = value;
+    }
+    document.getElementById('min-spacing').style.letterSpacing = "";
+    document.getElementById('middle-spacing').style.letterSpacing = "3px";
+    document.getElementById('max-spacing').style.letterSpacing = "4px";
+}
+
+function invalidReset() {
+    for (let i = 0; i < document.getElementsByTagName('p').length; i++) {
+        document.getElementsByTagName('p')[i].style = "";
+    }
+    for (let i = 0; i < document.getElementsByTagName('h1').length; i++) {
+        document.getElementsByTagName('h1')[i].style = "";
+    }
+    for (let i = 0; i < document.getElementsByTagName('a').length; i++) {
+        document.getElementsByTagName('a')[i].style = "";
+    }
+
+    //цвета
+    document.getElementById('background').style.background = "";
+    manyColors(document.getElementsByClassName('article'), "", 'background');
+    manyColors(document.getElementsByTagName('h1'), "", 'color');
+    manyColors(document.getElementsByTagName('p'), "", 'color');
+    manyColors(document.getElementsByTagName('a'), "", 'color');
+    manyColors(document.getElementsByTagName('footer'), "", 'background');
+    manyColors(document.getElementsByTagName('nav'), "", 'background')
+    document.getElementById('header').style.background = "";
+    document.getElementById('for-invalid').style.background = "";
+    manyColors(document.getElementsByTagName('label'), "", 'color');
+
+    document.getElementById('arial-click').style.fontFamily = 'Arial';
+    document.getElementById('times-new-roman-click').style.fontFamily = 'TimresNewRoman';
+
+    document.getElementById('min-spacing').style.letterSpacing = "";
+    document.getElementById('middle-spacing').style.letterSpacing = "3px";
+    document.getElementById('max-spacing').style.letterSpacing = "4px";
+
+    document.getElementById('on').checked = true;
 }

@@ -24,10 +24,11 @@
         </div>
         <div class="scale-fix nav-menu-container">
             <a href="#" onclick="close_nav_menu()" title="Закрыть" alt="Закрыть меню"><img id="close_icon"
-                    class="open_close_icon" src="/test/icons8-удалить-50.png"></a>
+                    class="iconJS open_close_icon" src="/test/icons8-удалить-50.png"></a>
             <div class="nav-menu-block">
                 <a class="nav-menu-link" href="">Автобусы. Подвоз детей</a>
-                <a class="nav-menu-link" href="">Адаптированные основные общеобразовательные программы на 2020-2021 учебный год</a>
+                <a class="nav-menu-link" href="">Адаптированные основные общеобразовательные программы на 2020-2021
+                    учебный год</a>
                 <a class="nav-menu-link" href="">Аннотации к рабочим программам 2020-2021</a>
                 <a class="nav-menu-link" href="">Архив</a>
                 <a class="nav-menu-link" href="">Аттестация ГИА, ОГЭ 2020</a>
@@ -108,30 +109,41 @@
             <div id="img-on-off">
                 <p class="for-invalid-paragraph">Изображения:</p>
                 <div class="margin-left">
-                    <div><input tabindex="9" type="radio" name="img-on-off" checked id="on"><label for="on">Вкл</label>
+                    <div onclick="imagesOnOff('on')"><input tabindex="9" type="radio" name="img-on-off" checked
+                            id="on"><label for="on">Вкл</label>
                     </div>
-                    <div><input tabindex="10" type="radio" name="img-on-off" id="off"><label for="off">Выкл</label>
+                    <div onclick="imagesOnOff('off')"><input tabindex="10" type="radio" name="img-on-off"
+                            id="off"><label for="off">Выкл</label>
                     </div>
                 </div>
             </div>
             <div id="font">
                 <p class="for-invalid-paragraph">Шрифт:</p>
                 <div class="margin-left">
-                    <p class='paragraph-js' onclick="fontChange(Arial)" style="font-family: Arial, Helvetica, sans-serif;">Без засечек</p>
-                    <p class='paragraph-js' onclick="fontChange(TimesNewRoman)" style="font-family: 'Times New Roman', Times, serif;">С засечками</p>
+                    <p id="arial-click" class='paragraph-js' onclick="fontChange('Arial')"
+                        style="font-family: Arial, Helvetica, sans-serif;">Без засечек</p>
+                    <p id="times-new-roman-click" class='paragraph-js' onclick="fontChange('TimesNewRoman')"
+                        style="font-family: 'Times New Roman', Times, serif;">С засечками</p>
                 </div>
             </div>
             <div id="font-interval">
                 <p class="for-invalid-paragraph">Межбуквенный интервал:</p>
                 <div class="margin-left">
-                    <p class='paragraph-js'>Стандартный</p>
-                    <p class='paragraph-js' style="letter-spacing: 3px;">Средний</p>
-                    <p class='paragraph-js' style="letter-spacing: 4px;">Большой</p>
+                    <p id="min-spacing" onclick="letterSpacingChange('')" class='paragraph-js'>Стандартный</p>
+                    <p id="middle-spacing" onclick="letterSpacingChange('3px')" class='paragraph-js'
+                        style="letter-spacing: 3px;">Средний</p>
+                    <p id="max-spacing" onclick="letterSpacingChange('4px')" class='paragraph-js'
+                        style="letter-spacing: 4px;">Большой</p>
                 </div>
+            </div>
+            <div>
+                <p onclick="invalidReset()" id="delete-invalid">
+                    Сброс настроек
+                </p>
             </div>
         </div>
         <nav class="scale-fix">
-            <img tabindex="0" id="invalid_image" src="/photos/icons/invalid_icon.png"
+            <img class="iconJS" tabindex="0" id="invalid_image" src="/photos/icons/invalid_icon.png"
                 alt="Возможности для слабовидящих">
             <a href="/index.html" class="header-link moment">
                 Главная
@@ -148,8 +160,8 @@
             <a href="/pages/documents/documents.html" class="header-link">
                 Документы
             </a>
-            <img tabindex="21" onclick="open_nav_menu()" alt="Открыть меню" title="Меню" class="button open_close_icon"
-                src="/photos/menu.png">
+            <img tabindex="21" onclick="open_nav_menu()" alt="Открыть меню" title="Меню"
+                class="iconJS button open_close_icon" src="/photos/menu.png">
         </nav>
     </header>
     <main main class="scale-fix">
@@ -450,14 +462,16 @@
                             правительство</a>
                     </div>
                     <div class="useful-link-div">
-                        <a class="useful-link" href="https://www.gosuslugi.ru/pgu/stateStructure/%20%20%20%2010003680131.html#!_places">Госуслуги
+                        <a class="useful-link"
+                            href="https://www.gosuslugi.ru/pgu/stateStructure/%20%20%20%2010003680131.html#!_places">Госуслуги
                             МВД</a>
                     </div>
                 </div>
 
                 <div class="useful-links-div">
                     <div class="useful-link-div">
-                        <a class="useful-link" href="https://gov39.ru/working/atk/">Единый информационный ресурс о деятельности в сфере
+                        <a class="useful-link" href="https://gov39.ru/working/atk/">Единый информационный ресурс о
+                            деятельности в сфере
                             противодействия терроризму на территории Калининградской области</a>
                     </div>
                     <div class="useful-link-div">
@@ -465,7 +479,8 @@
                             которые должны знать все школьники</a>
                     </div>
                     <div class="useful-link-div">
-                        <a class="useful-link" href="https://www.gosuslugi.ru/pgu/%20%20%20%20%20stateStructure/10003680131.html#!_places">Сайт
+                        <a class="useful-link"
+                            href="https://www.gosuslugi.ru/pgu/%20%20%20%20%20stateStructure/10003680131.html#!_places">Сайт
                             Министерства образования
                             и науки РФ</a>
                     </div>
@@ -480,10 +495,10 @@
                 2020, все права защищены
             </p>
             <div class="icons">
-                <a href="https://vk.com/borskoeshkola" target="_blank" class="icon" id="vk"><img class="icon"
+                <a href="https://vk.com/borskoeshkola" target="_blank" class="icon" id="vk"><img class="iconJS icon"
                         src="/photos/icons/VK_icon.png"></a>
                 <a href="https://www.facebook.com/groups/1765753950385216/" target="_blank" class="icon" id="fb"><img
-                        class="icon" src="/photos/icons/facebook_icon.png"></a>
+                        class="icon iconJS" src="/photos/icons/facebook_icon.png"></a>
             </div>
         </div>
     </footer>

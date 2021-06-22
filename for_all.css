@@ -261,6 +261,19 @@ input:focus,
         margin-left: 3px;
     }
 
+    #delete-invalid{
+        cursor: pointer;
+        padding: 5px;
+        color: white;
+        background: tomato;
+        border: 5px solid red;
+    }
+    #delete-invalid:hover{
+        color: red;
+        background: white;
+        border: 5px solid red;
+    }
+
     nav {
         z-index: 52;
         height: 60px;

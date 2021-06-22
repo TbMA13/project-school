@@ -65,7 +65,7 @@ a::selection {
 }
 
 header {
-    background-color: #B09B7F !important;
+    background: #B09B7F;
 }
 
 footer {
