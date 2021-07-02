@@ -26,15 +26,46 @@ function fontSizeChange(sourse, fontSize) {
 
 function invalidBlockRepair() {
     //Восстановление блока для слабовидящих
-    //fontSizeChange(document.getElementsByClassName('for-invalid-paragraph'), '18px');
     document.getElementById('small-font').style.fontSize = '15px';
+    document.getElementById('small-font').style.letterSpacing = '0';
+    document.getElementById('small-font').style.fontFamily = '';
+
     document.getElementById('middle-font').style.fontSize = '17px';
+    document.getElementById('middle-font').style.letterSpacing = '0';
+    document.getElementById('middle-font').style.fontFamily = '';
+
     document.getElementById('high-font').style.fontSize = '20px';
+    document.getElementById('high-font').style.letterSpacing = '0';
+    document.getElementById('high-font').style.fontFamily = '';
+
     fontSizeChange(document.getElementsByClassName('color-paragraph'), '16px');
+
     for (let i = 0; i < document.getElementsByClassName('paragraph-js').length; i++) {
         document.getElementsByClassName('paragraph-js')[i].style.fontSize = "16px";
+        document.getElementsByClassName('paragraph-js')[i].style.fontFamily = "";
     }
 
+    document.getElementById('arial-click').style.letterSpacing = "";
+    document.getElementById('times-new-roman-click').style.letterSpacing = "";
+
+    for (let i = 0; i < document.getElementsByClassName('for-invalid-paragraph').length; i++) {
+        document.getElementsByClassName('for-invalid-paragraph')[i].style.fontSize = "";
+        document.getElementsByClassName('for-invalid-paragraph')[i].style.letterSpacing = "0";
+        document.getElementsByClassName('for-invalid-paragraph')[i].style.fontFamily = "";
+    }
+    for (let i = 0; i < document.getElementsByClassName('color-paragraph').length; i++) {
+        document.getElementsByClassName('color-paragraph')[i].style = "";
+        document.getElementsByClassName('color-paragraph')[i].style.fontFamily = "";
+    }
+
+    document.getElementById('arial-click').style.fontFamily = 'Arial, Helvetica, sans-serif';
+    document.getElementById('times-new-roman-click').style.fontFamily = 'TimesNewRoman, Times, serif';
+
+    document.getElementById('min-spacing').style.letterSpacing = "";
+    document.getElementById('middle-spacing').style.letterSpacing = "3px";
+    document.getElementById('max-spacing').style.letterSpacing = "4px";
+
+    document.getElementById('delete-invalid').style = "";
 }
 
 function smallFontSize() {
@@ -49,6 +80,22 @@ function smallFontSize() {
         fontSizeChange(headingText, '28px');
         fontSizeChange(paragraph, '18px');
         fontSizeChange(document.getElementsByClassName('useful-link'), '18px');
+        invalidBlockRepair();
+    }
+    if ((document.documentElement.clientWidth <= 1125) && (document.documentElement.clientWidth >= 686)) {
+        fontSizeChange(headerLink, '25px');
+        fontSizeChange(navLink, '13px');
+        fontSizeChange(headingText, '32px');
+        fontSizeChange(paragraph, '18px');
+        fontSizeChange(document.getElementsByClassName('useful-link'), '18px');
+        invalidBlockRepair();
+    }
+    if (document.documentElement.clientWidth < 686) {
+        fontSizeChange(headerLink, '16px');
+        fontSizeChange(navLink, '14px');
+        fontSizeChange(headingText, '23px');
+        fontSizeChange(paragraph, '16px');
+        fontSizeChange(document.getElementsByClassName('useful-link'), '16px');
         invalidBlockRepair();
     }
 }
@@ -68,6 +115,24 @@ function middleFontSize() {
         fontSizeChange(document.getElementsByClassName('footer-text'), '25px')
         invalidBlockRepair();
     }
+
+    if ((document.documentElement.clientWidth <= 1125) && (document.documentElement.clientWidth >= 686)) {
+        fontSizeChange(headerLink, '27px');
+        fontSizeChange(navLink, '15px');
+        fontSizeChange(headingText, '35px');
+        fontSizeChange(paragraph, '22px');
+        fontSizeChange(document.getElementsByClassName('useful-link'), '22px');
+        invalidBlockRepair();
+    }
+
+    if (document.documentElement.clientWidth < 686) {
+        fontSizeChange(headerLink, '18px');
+        fontSizeChange(navLink, '16px');
+        fontSizeChange(headingText, '25px');
+        fontSizeChange(paragraph, '20px');
+        fontSizeChange(document.getElementsByClassName('useful-link'), '20px');
+        invalidBlockRepair();
+    }
 }
 
 function highFontSize() {
@@ -83,6 +148,24 @@ function highFontSize() {
         fontSizeChange(paragraph, '26px');
         fontSizeChange(document.getElementsByClassName('useful-link'), '26px');
         fontSizeChange(document.getElementsByClassName('footer-text'), '29px')
+        invalidBlockRepair();
+    }
+
+    if ((document.documentElement.clientWidth <= 1125) && (document.documentElement.clientWidth >= 686)) {
+        fontSizeChange(headerLink, '29px');
+        fontSizeChange(navLink, '17px');
+        fontSizeChange(headingText, '37px');
+        fontSizeChange(paragraph, '24px');
+        fontSizeChange(document.getElementsByClassName('useful-link'), '24px');
+        invalidBlockRepair();
+    }
+
+    if (document.documentElement.clientWidth < 686) {
+        fontSizeChange(headerLink, '20px');
+        fontSizeChange(navLink, '18px');
+        fontSizeChange(headingText, '27px');
+        fontSizeChange(paragraph, '22px');
+        fontSizeChange(document.getElementsByClassName('useful-link'), '22px');
         invalidBlockRepair();
     }
 }
@@ -123,6 +206,7 @@ function colorChange(textColor, blockColor) {
     for (let i = 0; i < document.getElementsByClassName('paragraph-js').length; i++) {
         document.getElementsByClassName('paragraph-js')[i].style.color = "";
     }
+    document.getElementById('delete-invalid').style = "";
 }
 
 //!работа с изображениями
@@ -159,6 +243,7 @@ function fontChange(font) {
     }
     document.getElementById('arial-click').style.fontFamily = 'Arial, Helvetica, sans-serif';
     document.getElementById('times-new-roman-click').style.fontFamily = 'TimesNewRoman, Times, serif';
+    invalidBlockRepair();
 }
 
 //!Изменение межбуквеннго интервала
@@ -176,6 +261,7 @@ function letterSpacingChange(value) {
     document.getElementById('min-spacing').style.letterSpacing = "";
     document.getElementById('middle-spacing').style.letterSpacing = "3px";
     document.getElementById('max-spacing').style.letterSpacing = "4px";
+    invalidBlockRepair();
 }
 
 function invalidReset() {
