@@ -11,7 +11,7 @@
     <meta name="theme-color" content="#B09B7F">
     <script src="/for_invalid.js"></script>
     <script src="/menu.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/universal.js"></script>
     <title>МБОУ "СШ пос. Борское" - Главная страница</title>
 </head>
 
@@ -23,7 +23,7 @@
 
         </div>
         <div class="scale-fix nav-menu-container">
-            <a href="#" onclick="close_nav_menu()" title="Закрыть" alt="Закрыть меню"><img id="close_icon"
+            <a href="#" id="closeButton"  title="Закрыть" alt="Закрыть меню"><img id="close_icon"
                     class="iconJS open_close_icon" src="/test/icons8-удалить-50.png"></a>
             <div class="nav-menu-block">
                 <a class="nav-menu-link" href="">Автобусы. Подвоз детей</a>
@@ -75,7 +75,7 @@
         <div style="
         opacity: 0;
         height: 0px;
-        padding: 0;" id="for-invalid">
+        padding: 0;" id="for-invalid" class="scale-fix">
             <div id="font-size">
                 <p class="for-invalid-paragraph">Размер шрифта:</p>
                 <div onclick="smallFontSize()" tabindex="1" id="small-size">
@@ -160,7 +160,7 @@
             <a href="/pages/documents/documents.html" class="header-link">
                 Документы
             </a>
-            <img tabindex="21" onclick="open_nav_menu()" alt="Открыть меню" title="Меню"
+            <img tabindex="21" id="openButton" alt="Открыть меню" title="Меню"
                 class="iconJS button open_close_icon" src="/photos/menu.png">
         </nav>
     </header>

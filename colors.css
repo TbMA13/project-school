@@ -90,8 +90,7 @@ body {
 
 @media screen and (min-width: 1125px) {
     .nav-menu {
-        background: rgba(255, 255, 255, 0.4);
-        backdrop-filter: blur(25px);
+        background: rgba(220, 220, 220, 1);
     }
 
     .nav-menu-block a {
@@ -124,6 +123,10 @@ body {
 }
 
 @media screen and (min-width: 686px) and (max-width: 1124px) {
+    .nav-menu {
+        background: rgba(220, 220, 220, 1);
+    }
+
     .nav-menu-block a {
         margin-bottom: 7px;
         color: #000000;
@@ -143,7 +146,7 @@ body {
 
 @media screen and (max-width: 685px) {
     #nav_background_mobile {
-        background: whitesmoke;
+        background: rgba(220, 220, 220, 1);
     }
 
     .nav-menu-block a {

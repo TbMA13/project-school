@@ -1,7 +1,3 @@
-window.onload = function () {
-    document.getElementById('invalid_image').onclick = invalid;
-}
-
 function invalid() {
     const forInvalidBlock = document.getElementById('for-invalid');
     if (forInvalidBlock.style.height === '0px') {
@@ -288,8 +284,8 @@ function invalidReset() {
     document.getElementById('nav_background_mobile').style.background = "";
     manyColors(document.getElementsByTagName('label'), "", 'color');
 
-    document.getElementById('arial-click').style.fontFamily = 'Arial';
-    document.getElementById('times-new-roman-click').style.fontFamily = 'TimresNewRoman';
+    document.getElementById('arial-click').style.fontFamily = 'Arial, Helvetica, sans-serif';
+    document.getElementById('times-new-roman-click').style.fontFamily = 'TimesNewRoman, Times, serif';
 
     document.getElementById('min-spacing').style.letterSpacing = "";
     document.getElementById('middle-spacing').style.letterSpacing = "3px";
