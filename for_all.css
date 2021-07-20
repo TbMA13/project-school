@@ -297,6 +297,7 @@ input:focus,
     }
 
     .button {
+        padding: 10px;
         max-width: 50px;
         max-height: 60px;
     }
@@ -604,7 +605,7 @@ input:focus,
     #invalid_image {
         width: 40px;
         height: 40px;
-        padding: 5px;
+        padding: 10px;
         z-index: 54;
     }
 
