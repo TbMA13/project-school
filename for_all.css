@@ -137,7 +137,7 @@ input:focus,
         width: 49%;
     }
 
-    #close_icon {
+    #closeButton {
         position: absolute;
         height: 50px;
         width: 50px;
@@ -532,7 +532,7 @@ input:focus,
         width: 49%;
     }
 
-    #close_icon {
+    #closeButton {
         position: absolute;
         height: 50px;
         width: 50px;
@@ -921,7 +921,7 @@ input:focus,
         text-decoration: underline;
     }
 
-    #close_icon {
+    #closeButton {
         position: fixed;
         height: 32px;
         width: 32px;

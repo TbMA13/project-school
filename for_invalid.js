@@ -5,11 +5,13 @@ function invalid() {
         forInvalidBlock.style.paddingTop = '10px';
         forInvalidBlock.style.paddingBottom = '10px';
         forInvalidBlock.style.opacity = '1';
+        forInvalidBlock.style.display = 'flex';
     } else {
         forInvalidBlock.style.height = '0';
         forInvalidBlock.style.paddingTop = '0';
         forInvalidBlock.style.paddingBottom = '0';
         forInvalidBlock.style.opacity = '0';
+        forInvalidBlock.style.display = 'none';
     }
 }
 

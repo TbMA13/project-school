@@ -1,3 +1,15 @@
+h1::selection{
+    background: #C6AE92;
+    color: black;
+}
+h1::-moz-selection{
+    background: #C6AE92;
+    color: black;
+}
+h1::-webkit-selection{
+    background: #C6AE92;
+    color: black;
+}
 p::-moz-selection {
     background: #C6AE92;
     color: black;

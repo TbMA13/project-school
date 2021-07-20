@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="/index.css">
+    <link type="text/css" rel="stylesheet" href="/for_all.css">
+    <link rel="stylesheet" href="colors.css">
+    <link rel="shortcut icon" href="/photos/favicon/all.png" type="image/x-icon">
+    <meta name="theme-color" content="#B09B7F">
+    <script src="/for_invalid.js"></script>
+    <script src="/menu.js"></script>
+    <script src="/universal.js"></script>
+    <title>МБОУ "СШ пос. Борское"</title>
+</head>
+
+<body>
+    <div id="background">
+    </div>
+    <div class="nav-menu">
+        <div id="nav_background_mobile">
+
+        </div>
+        <div class="scale-fix nav-menu-container">
+            
+        </div>
+    </div>
+    <header id="header">
+        <div style="
+        opacity: 0;
+        height: 0px;
+        padding: 0;" id="for-invalid" class="scale-fix">
+            <div id="font-size">
+                <p class="for-invalid-paragraph">Размер шрифта:</p>
+                <div onclick="smallFontSize()" tabindex="1" id="small-size">
+                    <p id="small-font">А</p>
+                </div>
+                <div onclick="middleFontSize()" tabindex="2" id="middle-size">
+                    <p id="middle-font">А</>
+                </div>
+                <div onclick="highFontSize()" tabindex="3" id="high-size">
+                    <p id="high-font">А</p>
+                </div>
+            </div>
+            <div id="color-scheme">
+                <p class="for-invalid-paragraph">Цветовая схема:</p>
+                <div onclick="colorChange('#ffffffff' ,'#000')" tabindex="4" id="white-black">
+                    <p class="color-paragraph">А</p>
+                </div>
+                <div onclick="colorChange('#000' ,'#fff')" tabindex="5" id="black-white">
+                    <p class="color-paragraph">А</p>
+                </div>
+                <div tabindex="6" onclick="colorChange('#063462' ,'#9ed1ff')" id="blue">
+                    <p class="color-paragraph">А</p>
+                </div>
+                <div onclick="colorChange('#59422e' ,'#f7f3d6')" tabindex="7" id="brown">
+                    <p class="color-paragraph">А</p>
+                </div>
+                <div onclick="colorChange('#a9dd38' ,'#59422e')" tabindex="8" id="green-brown">
+                    <p class="color-paragraph">А</p>
+                </div>
+            </div>
+            <div id="img-on-off">
+                <p class="for-invalid-paragraph">Изображения:</p>
+                <div class="margin-left">
+                    <div onclick="imagesOnOff('on')"><input tabindex="9" type="radio" name="img-on-off" checked
+                            id="on"><label for="on">Вкл</label>
+                    </div>
+                    <div onclick="imagesOnOff('off')"><input tabindex="10" type="radio" name="img-on-off"
+                            id="off"><label for="off">Выкл</label>
+                    </div>
+                </div>
+            </div>
+            <div id="font">
+                <p class="for-invalid-paragraph">Шрифт:</p>
+                <div class="margin-left">
+                    <p id="arial-click" class='paragraph-js' onclick="fontChange('Arial, Helvetica, sans-serif')"
+                        style="font-family: Arial, Helvetica, sans-serif;">Без засечек</p>
+                    <p id="times-new-roman-click" class='paragraph-js'
+                        onclick="fontChange('TimesNewRoman, Times, serif')"
+                        style="font-family: Times New Roman, Times, serif;">С засечками</p>
+                </div>
+            </div>
+            <div id="font-interval">
+                <p class="for-invalid-paragraph">Межбуквенный интервал:</p>
+                <div class="margin-left">
+                    <p id="min-spacing" onclick="letterSpacingChange('')" class='paragraph-js'>Стандартный</p>
+                    <p id="middle-spacing" onclick="letterSpacingChange('3px')" class='paragraph-js'
+                        style="letter-spacing: 3px;">Средний</p>
+                    <p id="max-spacing" onclick="letterSpacingChange('4px')" class='paragraph-js'
+                        style="letter-spacing: 4px;">Большой</p>
+                </div>
+            </div>
+            <div>
+                <p onclick="invalidReset()" id="delete-invalid">
+                    Сброс настроек
+                </p>
+            </div>
+        </div>
+        <nav class="scale-fix">
+            <img class="iconJS" tabindex="0" id="invalid_image" src="/photos/icons/invalid_icon.png"
+                alt="Возможности для слабовидящих">
+            <a href="/index.html" class="header-link">
+                Главная
+            </a>
+            <a href="/pages/news/news.html" class="header-link mobile-none">
+                Новости
+            </a>
+            <a href="" class="header-link">
+                Образование
+            </a>
+            <a href="/pages/tochka_rosta/tochka-rosta.html" class="header-link mobile-none">
+                Точка Роста
+            </a>
+            <a href="/pages/documents/documents.html" class="header-link">
+                Документы
+            </a>
+            <img tabindex="21" id="openButton" alt="Открыть меню" title="Меню" class="iconJS button open_close_icon"
+                src="/photos/menu.png">
+        </nav>
+    </header>
+    <main main class="scale-fix">
+        <div class="article">
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-text scale-fix">
+            <p class="footer-text">
+                2020, все права защищены
+            </p>
+            <div class="icons">
+                <a href="https://vk.com/borskoeshkola" target="_blank" class="icon" id="vk"><img class="iconJS icon"
+                        src="/photos/icons/VK_icon.png"></a>
+                <a href="https://www.facebook.com/groups/1765753950385216/" target="_blank" class="icon" id="fb"><img
+                        class="icon iconJS" src="/photos/icons/facebook_icon.png"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
