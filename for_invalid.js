@@ -1,5 +1,6 @@
 function invalid() {
     const forInvalidBlock = document.getElementById('for-invalid');
+    
     if (forInvalidBlock.style.height === '0px') {
         forInvalidBlock.style.height = 'auto';
         forInvalidBlock.style.paddingTop = '10px';

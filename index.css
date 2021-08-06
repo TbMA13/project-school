@@ -1,4 +1,11 @@
 @media screen and (min-width: 1125px) {
+    .article {
+        display: flex;
+        flex-direction: row;
+    }
+    .in-article-div{
+        width: 55%;
+    }
     #flex-div-article {
         position: relative;
         width: 90%;
